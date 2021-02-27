@@ -8,6 +8,11 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
+    path: "/jsx",
+    name: "JSX",
+    component: () => import(/* webpackChunkName: "JSX" */ "../views/JSX.vue")
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
